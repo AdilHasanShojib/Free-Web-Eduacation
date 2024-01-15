@@ -3,63 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Education|Home</title>
+    <title>Free Education | Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/Courses/Logo/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Courses/Logo/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/Courses/Logo/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./Assets/Courses/Logo/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Free Education </h1>
+        <div class="banner"></div>
     </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Course Review</a>
-    <a href="#">Study Material</a>
-    <a href="#">Courses</a>
-    <a href="#">Login/SignUp</a>
+    <a href="#" class="menu-btn">Home</a>
+    <a href="#" class="menu-btn">Course Review</a>
+    <a href="#" class="menu-btn">Study Material</a>
+    <a href="#"class="menu-btn">Courses</a>
+    <a href="#" class="flex-align-right menu-btn">Login/SignUp</a>
 
 </nav>
 
 <main>
-    <h2>Courses</h2>
+    
     <section>
-        <video src="Lecture/Lecture 1- Operating System [Md. Rayhan Ahmed].mp4" width="33%" poster="Image/Screenshot 2024-01-08 214457.jpg" controls></video>
-        <video src="Lecture/Lecture 2- Operating System [Md. Rayhan Ahmed].mp4" width="33%" poster="Image/Screenshot 2024-01-08 214457.jpg" controls></video>
-        <video src="Lecture/Lecture 3- Operating System [Md. Rayhan Ahmed].mp4" width="33%" poster="Image/Screenshot 2024-01-08 214457.jpg" controls></video>
-        <br>
-        <br>
-        <br>
-        <video src="Lecture/Lecture 1- Operating System [Md. Rayhan Ahmed].mp4" width="33%" poster="Image/Screenshot 2024-01-08 214457.jpg" controls></video>
-        <video src="Lecture/Lecture 2- Operating System [Md. Rayhan Ahmed].mp4" width="33%" poster="Image/Screenshot 2024-01-08 214457.jpg" controls></video>
-        <video src="Lecture/Lecture 3- Operating System [Md. Rayhan Ahmed].mp4" width="33%" poster="Image/Screenshot 2024-01-08 214457.jpg" controls></video>
+        <h2><span>Courses</span></h2>
+        <div class="carousel"
+         data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell"> <video src="./Assets/Courses/Courses/Operating system/Lecture/Lecture 1- Operating System [Md. Rayhan Ahmed].mp4"  poster="./Assets/Courses/Courses/Operating system/Image/Screenshot 2024-01-08 214457.jpg" controls></video></div>
+        <div class="carousel-cell"> <video src="./Assets/Courses/Courses/OS LAB/Lecture/Lecture 2- Operating System [Md. Rayhan Ahmed].mp4"  poster="./Assets/Courses/Courses/Operating system/Image/Screenshot 2024-01-08 214457.jpg" controls></video></div>
+        <div class="carousel-cell"><video src="./Assets/Courses/Courses/Project management/Lecture/Lecture 3- Operating System [Md. Rayhan Ahmed].mp4"  poster="./Assets/Courses/Courses/Project management/Image/Screenshot 2024-01-08 214457.jpg" controls></video></div>
+        <div class="carousel-cell"><video src="./Assets/Courses/Courses/software Testing/Lecture/Lecture 1- Operating System [Md. Rayhan Ahmed].mp4" poster="./Assets/Courses/Courses/Operating system/Image/Screenshot 2024-01-08 214457.jpg" controls></video></div>
+        <div class="carousel-cell"><video src="./Assets/Courses/Courses/Vector Analysis/Lecture/Lecture 2- Operating System [Md. Rayhan Ahmed].mp4"  poster="./Assets/Courses/Courses/Operating system/Image/Screenshot 2024-01-08 214457.jpg" controls></video></div>
+     </div>
+
+
+    </section>
+       
+        
+
+
+      <section>
+       <h2> <span>Course Review</span></h2>
+       <div class="carousel"
+         data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell "><iframe  src="https://www.youtube.com/embed/b8f_AxnfVHg?si=VpJJQh8p-jl2v6yh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="carousel-cell "><iframe  src="https://www.youtube.com/embed/53DDARNSPyM?si=fWMsz-gKa6QsYF9_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="carousel-cell "><iframe  src="https://www.youtube.com/embed/bxpwxYWD4qI?si=vZ1vHj5tAD1Gme-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+       
+     </div>
+
+
+
+       
+       
+       
+
+
+      </section>
+
+
+      <section>
+        <h2><span>Study Materials</span></h2>
+        <div class="carousel"
+         data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell "><a href="./Assets/Courses/Courses/Operating system/Materials/Introduction week1.pdf" target="_blank"><img src="./Assets/Courses/Courses/Operating system/Image/download.png" width="15%" height="50%" alt=""></a></div>
+        <div class="carousel-cell "><a href="./Assets/Courses/Courses/OS LAB/Materials/week2_ProcessThread.pdf" target="_blank"><img src="./Assets/Courses/Courses/Project management/Image/Screenshot 2024-01-08 214457.jpg" width="15%" height="50%" alt=""></a></div>
+        <div class="carousel-cell "><a href="./Assets/Courses/Courses/Project management/Materials/week3_IPC.pdf" target="_blank"><img src="./Assets/Courses/Courses/Operating system/Image/download.png" width="15%" height="50%" alt=""></a></div>
+        <div class="carousel-cell "><a href="./Assets/Courses/Courses/software Testing/Materials/week4_scheduling.pdf" target="_blank"><img src="./Assets/Courses/Courses/software Testing/Image/Screenshot 2024-01-08 214457.jpg" width="15%" height="50%" alt=""></a></div>
+       
+     </div>
     </section>
 
       <section>
-       <h2>Course Review</h2>
-       <iframe width="33%" height="75%" src="https://www.youtube.com/embed/b8f_AxnfVHg?si=VpJJQh8p-jl2v6yh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-       <iframe width="33%" height="75%" src="https://www.youtube.com/embed/53DDARNSPyM?si=fWMsz-gKa6QsYF9_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-       <iframe width="33%" height="75%" src="https://www.youtube.com/embed/bxpwxYWD4qI?si=vZ1vHj5tAD1Gme-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-      </section>
-
-
-      <section>
-        <h2>Study Materials</h2>
-        <a href="Materials/Introduction week1.pdf" target="_blank"><img src="Image/download.png" width="15%" height="30%" alt=""></a>
-        <a href="Materials/week2_ProcessThread.pdf" target="_blank"><img src="Image/Screenshot 2024-01-08 214457.jpg" width="15%" height="30%" alt=""></a>
-        <a href="Materials/week3_IPC.pdf" target="_blank"><img src="Image/download.png" width="15%" height="30%" alt=""></a>
-        <a href="Materials/week4_scheduling.pdf" target="_blank"><img src="Image/Screenshot 2024-01-08 214457.jpg" width="15%" height="30%" alt=""></a>
-      </section>
-
-      <section>
-        <h2>Our Founder</h2>
-        <img src="Image/sajib.jpg" alt=" This is MD. Shojib Talukder" width="10%">
-        <h3>MD. Shojib Talukder</h3>
-        <a href="https://github.com/AdilHasanShojib" target="_blank">GitHub</a>
-        <a href="https://www.facebook.com/shojib.talukder.adil" target="_blank">Facebook</a>
-        <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
+        <h2><span>Our Founder</span></h2>
+        <img class="profile-img" src="./Assets/Courses/Logo/sajib.jpg" alt=" This is MD. Shojib Talukder" width="10%">
+        <h3 class="profile-name">MD. Shojib Talukder</h3>
+        <div class="link">
+        <a  href="https://github.com/AdilHasanShojib" target="_blank"><i class="fa fa-github"></i>GitHub</a>
+        <a  href="https://www.facebook.com/shojib.talukder.adil" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
+        <a  href="https://web.telegram.org/k/" target="_blank"><i class="fa fa-telegram"></i>Telegram</a>
+        </div>
+       
 
     <h4> I am Shojib Talukder.I am an COMPUTER Engineer. I have completed my Bse from UIU</h4>
     <h5>Most of the student facing problem on study.They have no proper guideline.They are facing different kind of problems. I am here for helping them.</h5>
@@ -74,8 +104,9 @@
     <a href="#">Terms of Use</a>
     <a href="#">Privacy Policy</a>
     <a href="#">Refund Policy</a>
-    <a href="#">&copy; 2024 | Free Eduaction</a>
+    <a href="#" class="flex-align-right">&copy; 2024 | Free Eduaction</a>
 </footer>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
 </html>
