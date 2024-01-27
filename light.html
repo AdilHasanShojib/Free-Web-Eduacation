@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Light</title>
+<style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.btn{
+  padding: 10px;
+  background-color: green;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+ 
+
+}
+</style>
+</head>
+<body>
+    <img id="bulb" src="./Assets/Courses/Logo/off.jpg" alt="" class="center">
+    <button id="btn"  class="center btn">Turn On</button>
+
+   <script>
+    let on = document.getElementById('btn')
+    let bulb = document.getElementById('bulb')
+    on.addEventListener('click', toggleBulb)
+
+    function toggleBulb(e){
+        if(on.textContent.includes('On')){
+          bulb.src = "./Assets/Courses/Logo/onnn.png"
+          on.textContent="Turn Off"
+        }
+
+        else{
+            bulb.src ="./Assets/Courses/Logo/off.jpg"
+            on.textContent="Turn On"
+            
+        }
+     
+
+    }
+
+
+
+   </script>
+
+</body>
+</html>
